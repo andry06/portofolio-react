@@ -30,18 +30,18 @@ const Modal = ({setShowModal, body}) => {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white lg:h-max-[420px] overflow-y-auto">
+                <div className="relative p-6 flex-auto dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white lg:max-h-[420px] lg:overflow-y-auto">
                 <video className='w-10/12 h-10/12 mx-auto cursor-pointer mb-4' controls autoplay>
                     <source src={Pos} type="video/mp4" />
                 </video>
                 <p>
                 <span className='font-semibold'>Details</span> :  A system that can support sales transactions, purchases, product management and transaction reports digitally. <br />
                 <span className='font-semibold'>Tools </span>	: React.JS, Node JS, Express JS MongoDB, CSS Boostrap <br/>
-                <span className='font-semibold'>Link Github</span>	: <a href="https://github.com/andry06/project-eduwork">https://github.com/andry06/project-eduwork</a>
+                <span className='font-semibold'>Link Github</span>	: <a href="https://github.com/andry06/project-eduwork" className='text-blue-400'>https://github.com/andry06/project-eduwork</a>
                 </p>
                 </div>
                 {/*footer*/}
-                <div className="dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white flex items-center justify-end p-1 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white flex items-center justify-end p-1 border-t border-solid border-blue-200 rounded-b ">
                   <button
                     className="text-red-500  font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
