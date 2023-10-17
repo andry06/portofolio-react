@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sejam from '../assets/sejam.png';
-// import { projects } from '../data'
+import Modal from './Modal';
 
-
+  
 const Works = () => {
-  return (
-    <div className='w-full flex flex-col  px-8 md:px-10 gap-10 lg:gap-20 lg:pb-20 '>
-        <h4 className='text-3xl font-bold text-black dark:text-white mt-10'>Projects</h4>
+    const body = document.querySelector("body"); 
+ 
+    const [showModal, setShowModal] = useState(false);
 
-        <div className='flex flex-wrap gap-10  justify-center' data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
-            <div className='w-[320px] h-[320px] cursor-pointer shadow-xl hover:scale-110 rounded-md ease-in-out' >
-                        <img src={Sejam} alt="pos_food" className='w-full h-[250px]  rounded-md' />
+
+    return (
+      
+    <div className='w-full flex flex-col  px-8 md:px-10 gap-10 lg:gap-20 lg:pb-20 '>
+        
+        <h4 className='text-3xl font-bold text-black dark:text-white mt-10 text-center'>Projects</h4>
+
+        <div className='flex flex-wrap gap-10  justify-center  ' data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
+            <div className='w-[320px] h-[320px]  shadow-xl hover:scale-110  ease-in-out  rounded-xl' >
+                        <img src={Sejam} alt="pos_food" className='w-full h-[250px]  rounded-t-lg' />
                         
-                        <div className='w-full h-[150px] bg-white dark:bg-[#04133e] shadow-2xl'>
+                        <div className='w-full h-[150px] bg-white dark:bg-[#04133e] shadow-2xl  border'>
                             <h4 className='text-2xl text-black dark:text-white font-semibold py-2 px-3 '>
                                 POS Food Store
                             </h4>
@@ -20,22 +27,22 @@ const Works = () => {
                             <p className='text-sm text-orange-600 px-3 uppercase'>FULL STACK MERN</p>
                             <a href="https://github.com/andry06/project-eduwork" className='dark:text-blue-500 px-3'>Github Link</a>
                             <br />
-                            <button className='dark:text-blue-500 dark:bg-white px-4 py-1 mt-2 ms-2 rounded-lg block bg-blue-700 text-white \'>Detail</button>
+                            <button  className='bg-sky-400 hover:bg-sky-500 text-md text-white font-semibold py-1 px-4 align-middle ml-2 mt-2'  onClick={() => {
+                                setShowModal(true);
+                                // body.style.overflow = "hidden"; 
+                                }}>
+                                Detail</button>
                         </div>
                     </div>
-            {/* {projects.map((p, index) => (
-                <div key={index} className='w-[320px] h-[320px] cursor-pointer shadow-xl hover:scale-110 rounded-md ease-in-out' data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
-                    <img src={p.img} alt={p.name} className='w-full h-[250px] object-cover rounded-md' />
-                    
-                    <div className='w-full h-[100px] bg-white dark:bg-[#04133e]'>
-                        <h4 className='text-2xl text-black dark:text-white font-semibold py-2 px-1 '>
-                            {p.title}
-                        </h4>
-                        <p className='text-sm text-orange-600 px-1 uppercase'>{p.cat}</p>
-                    </div>
-                </div>
-            ))} */}
         </div>
+
+        {showModal ? (
+       <Modal setShowModal={setShowModal} body={body}  />
+        
+      ) : null}
+
+   
+  
     </div>
   )
 }
