@@ -30,7 +30,7 @@ const Modal = ({setShowModal, body}) => {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 flex-auto dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white lg:h-max-[450px] overflow-y-auto">
+                <div className="relative p-6 flex-auto dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white lg:h-max-[420px] overflow-y-auto">
                 <video className='w-10/12 h-10/12 mx-auto cursor-pointer mb-4' controls autoplay>
                     <source src={Pos} type="video/mp4" />
                 </video>
