@@ -13,7 +13,7 @@ import sistem_produksi from '../assets/sistem-produksi.mp4';
             <div className="relative w-full my-6 mx-3 max-w-3xl ">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*header*/}
+                {/*header*/} 
                 <div className="dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e] dark:text-white flex items-start justify-between p-2 border-b border-solid border-blueGray-200 rounded-t">
                   <h3 className="text-2xl font-semibold">
                     {detailProject[idModal].title}
