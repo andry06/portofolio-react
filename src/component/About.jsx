@@ -19,7 +19,7 @@ const About = () => {
                 Hello It's Me Andri Suryono. I am a graduate of Informatics Engineering and have experience as an IT staff in garment manufacturing for 5 years.I just finished a course at Eduwork with the Mern Stack class. In my previous workplace, I used to create or develop programs with the PHP programming language and My SQL database by successfully creating a Production Garment System program for production data manage. Currently, I am open to working in the positions of Full Stack Developer, Backend Developer, and Front End Developer.
             </p>
 
-            <div className="mt-5 2xl:mt-10 flex flex-wrap gap-5" data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
+            {/* <div className="mt-5 2xl:mt-10 flex flex-wrap gap-5" data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
                 <p className='flex gap-3 items-center justify-center rounded-full shadow-lg py-2 px-4 bg-[#030a1c] text-white cursor-pointer'>
                     <FaUserAlt size={14} /> Andri Suryono
                 </p>
@@ -39,7 +39,7 @@ const About = () => {
                     <BiSolidFileDoc size={14} /> Download CV
                 </a>
 
-            </div>
+            </div> */}
         </div>
     </div>
   )

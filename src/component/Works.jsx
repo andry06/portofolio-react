@@ -37,7 +37,7 @@ const Works = () => {
                 </div>
             </div>
 
-            <div className='w-[320px] h-[320px]  shadow-xl hover:scale-110  ease-in-out  rounded-xl' >
+            <div className='w-[320px] h-[320px]  shadow-xl hover:scale-110  ease-in-out  rounded-xl mt-20 md:mt-0' >
                 <img src={sistem_produksi} alt="pos_food" className='w-full h-[250px]  rounded-t-lg' />
                 
                 <div className='w-full h-[150px] bg-white dark:bg-[#04133e] shadow-2xl  border rounded-b-lg'>
