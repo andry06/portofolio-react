@@ -8,7 +8,7 @@ import sistem_produksi from '../assets/sistem-produksi.mp4';
   return (
     <>  
           <div
-            className={`justify-center items-end flex w-full  overflow-x-hidden overflow-y-auto absolute bottom-[${pixelBottom}px] md:bottom-64 inset-0 z-50 outline-none focus:outline-none`}
+            className={`justify-center items-end flex w-full  overflow-x-hidden overflow-y-auto absolute bottom-[875px] md:bottom-64 inset-0 z-50 outline-none focus:outline-none`}
           >
             <div className="relative w-full my-6 mx-3 max-w-3xl ">
               {/*content*/}
