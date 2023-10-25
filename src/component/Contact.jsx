@@ -6,7 +6,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md'
 
 const Contact = () => {
   return (
-    <div className='w-full flex flex-col py-10'>
+    <div className='w-full flex flex-col py-10 ' data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
     <h4 className='text-3xl font-bold text-black dark:text-white mb-10 text-center'>
         Contact Me
     </h4>  
