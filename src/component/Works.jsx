@@ -7,12 +7,13 @@ import Modal from './Modal';
 const Works = () => {
     const body = document.querySelector("body"); 
     const [idModal, setIdModal] = useState(0);
+    const [pixelBottom, setPixelBottom] = useState(0);
     const [showModal, setShowModal] = useState(false);
     console.log(idModal)
 
     return (
       
-    <div className='w-full flex flex-col  px-8 md:px-10 gap-10 lg:gap-20 lg:pb-20 '>
+    <div className='w-full flex flex-col  px-8 md:px-10 gap-10 lg:gap-20 pb-20 '>
         
         <h4 className='text-3xl font-bold text-black dark:text-white mt-10 text-center'>Projects</h4>
 
@@ -31,6 +32,7 @@ const Works = () => {
                     <button  className='bg-sky-400 hover:bg-sky-500 text-md text-white font-semibold py-1 px-4 align-middle ml-2 mt-2'  onClick={() => {
                         setShowModal(true);
                         setIdModal(0);
+                        setPixelBottom(875);
                         // body.style.overflow = "hidden"; 
                         }}>
                         Detail</button>
@@ -50,6 +52,7 @@ const Works = () => {
                     <button  className='bg-sky-400 hover:bg-sky-500 text-md text-white font-semibold py-1 px-4 align-middle ml-2 mt-2'  onClick={() => {
                         setShowModal(true);
                         setIdModal(1);
+                        setPixelBottom(675);
                         // body.style.overflow = "hidden"; 
                         }}>
                         Detail</button>
@@ -58,7 +61,7 @@ const Works = () => {
         </div>
 
         {showModal ? (
-       <Modal setShowModal={setShowModal} body={body} idModal={idModal} />
+       <Modal setShowModal={setShowModal} body={body} idModal={idModal} pixelBottom={pixelBottom}/>
         
       ) : null}
 

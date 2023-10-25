@@ -3,12 +3,12 @@ import { detailProject } from '../data';
 import Pos from '../assets/pos_project.mp4';
 import sistem_produksi from '../assets/sistem-produksi.mp4';
 
-  const Modal = ({setShowModal, body, idModal}) => {
+  const Modal = ({setShowModal, body, idModal, pixelBottom}) => {
     console.log(detailProject[idModal].title)
   return (
     <>  
           <div
-            className="justify-center items-end flex w-full  overflow-x-hidden overflow-y-auto absolute bottom-64  inset-0 z-50 outline-none focus:outline-none "
+            className={`justify-center items-end flex w-full  overflow-x-hidden overflow-y-auto absolute bottom-[${pixelBottom}px] md:bottom-64 inset-0 z-50 outline-none focus:outline-none`}
           >
             <div className="relative w-full my-6 mx-3 max-w-3xl ">
               {/*content*/}
