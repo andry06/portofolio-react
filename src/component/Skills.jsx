@@ -1,7 +1,7 @@
 import React from 'react'
 import { skills, softskills } from '../data'
 import { BsCheck2All }  from 'react-icons/bs'
-import { Nodejs, Mongodb, Reactjs, Express, HTML5, CSS3, } from '../assets';
+import { Nodejs, Mongodb, Reactjs, Express, HTML5, CSS3, Javascript } from '../assets';
 import Php from '../assets/php.png';
 import Mysql from '../assets/mysql.png';
 import Bootstrap from '../assets/bootstrap.png';
@@ -91,6 +91,16 @@ const Skills = () => {
                 <div className="flex flex-col gap-1">
                     <div className='flex items-center justify-between'>
                         <p className='text-md text-semibold text-white'>CSS3</p>
+                    </div>
+                </div>
+            </div>
+            <div className='grid-tech-skill easy-in-out' data-aos='zoom-in-down' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
+                <div className='w-10 h-10'>
+                    <img src={Javascript} className='w-full h-full rounded ' />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <div className='flex items-center justify-between'>
+                        <p className='text-md text-semibold text-white'>Javascript</p>
                     </div>
                 </div>
             </div>
