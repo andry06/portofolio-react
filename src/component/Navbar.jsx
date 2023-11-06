@@ -5,7 +5,7 @@ import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai'
 
 function Navbar({darkMode, isOpen, toggleMenu, toggleTheme}) {
-    console.log(isOpen)
+    
   return (
     <div className='px-0 2xl:px-40'>
         <div className='w-full items-center justify-between py-4 px-10'>

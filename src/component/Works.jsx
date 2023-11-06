@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import Sejam from '../assets/sejam.png';
 import sistem_produksi from '../assets/sistem_produksi.png';
-import Modal from './Modal';
+
 
   
-const Works = () => {
+const Works = ({darkMode}) => {
     const body = document.querySelector("body"); 
-    const [idModal, setIdModal] = useState(0);
-    const [pixelBottom, setPixelBottom] = useState(0);
-    const [showModal, setShowModal] = useState(false);
-    console.log(idModal)
+    console.log(darkMode)
 
     return (
       
@@ -26,16 +23,11 @@ const Works = () => {
                         POS Food Store
                     </h4>
                    
-                    <p className='text-sm text-orange-600 px-3 uppercase'>Production Garment System</p>
-                    <a href="https://github.com/andry06/project-eduwork" className='dark:text-blue-500 px-3'>Github Link</a>
+                    <p className='text-sm text-orange-600 px-3 uppercase'>MERN STACK</p>
+                    <a href="https://pos-sejamcafe.vercel.app/" target="_blank" className='dark:text-blue-500 px-3'>Link Demo</a>
                     <br />
-                    <button  className='bg-sky-400 hover:bg-sky-500 text-md text-white font-semibold py-1 px-4 align-middle ml-2 mt-2'  onClick={() => {
-                        setShowModal(true);
-                        setIdModal(0);
-                        setPixelBottom(875);
-                        // body.style.overflow = "hidden"; 
-                        }}>
-                        Detail</button>
+                    <a href={`/0/project/${darkMode}`} className='bg-sky-400 hover:bg-sky-500 text-md text-white text-center font-semibold py-1 px-4 align-middle mt-6 block rounded-b-lg'>
+                        Detail</a>
                 </div>
             </div>
 
@@ -49,21 +41,13 @@ const Works = () => {
                     <p className='text-sm text-orange-600 px-3 uppercase'>FULL STACK PHP</p>
                     <a href="#" className='dark:text-blue-500 px-3'>Private</a>
                     <br />
-                    <button  className='bg-sky-400 hover:bg-sky-500 text-md text-white font-semibold py-1 px-4 align-middle ml-2 mt-2'  onClick={() => {
-                        setShowModal(true);
-                        setIdModal(1);
-                        setPixelBottom(675);
-                        // body.style.overflow = "hidden"; 
-                        }}>
-                        Detail</button>
+                    <a href={`/1/project/${darkMode}`} className='bg-sky-400 hover:bg-sky-500 text-md text-white text-center font-semibold py-1 px-4 align-middle mt-6 block rounded-b-lg' >
+                        Detail</a>
                 </div>
             </div>
         </div>
 
-        {showModal ? (
-       <Modal setShowModal={setShowModal} body={body} idModal={idModal} pixelBottom={pixelBottom}/>
-        
-      ) : null}
+       
 
    
   

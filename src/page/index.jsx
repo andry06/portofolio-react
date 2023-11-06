@@ -46,7 +46,7 @@ const HomePage = () => {
         </section>
 
         <section id="projects" className="w-full px-0 lg:px-5 2xl:px-40 pt-10 pb-20 lg:py-10 dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e]">
-            <Works />
+            <Works darkMode={darkMode}/>
         </section>
 
          <section id="about" className="w-full px-0 lg:px-5 2xl:px-40 py-10 lg:py-0 dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e]">
