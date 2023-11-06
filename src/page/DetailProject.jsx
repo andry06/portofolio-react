@@ -6,9 +6,9 @@ import sistem_produksi from '../assets/sistem-produksi.mp4';
 
 const DetailProject = () => {
     const params = useParams();
-    const [darkMode, setDarkMode] = useState('true');
+    const darkMode = 'true';
     const navigate = useNavigate();
-    console.log(darkMode)
+
     return(
 
         <div className={`w-full h-full min-h-[100vh] bg-white ${darkMode===params.mode && "dark"}`}>
@@ -23,7 +23,7 @@ const DetailProject = () => {
             
                 <div className="w-full flex flex-col lg:flex-row px-8 md:px-19 gap-10 lg:gap-20 py-14 ">
                     <div className="w-full lg:mt-3 lg:basis-[50%]">
-                    <video className='w-full mx-auto cursor-pointer mb-4' controls autoplay>
+                    <video className='w-full mx-auto cursor-pointer mb-4' controls >
                     <source 
                     src={params.id == 0 ? Pos :
                         params.id == 1 ? sistem_produksi : null } 
@@ -34,11 +34,16 @@ const DetailProject = () => {
                         <h3 className="text-2xl font-semibold">
                             {detailProject[params.id].title}
                         </h3>
-                        <p className='text-black dark:text-white mt-5'>
-                        <div className='font-semibold '>Details : </div><p className="text-justify">   {detailProject[params.id].details} </p>
+                        <div className='text-black dark:text-white mt-5'>
+                        <div className='font-semibold '>Details : </div><span className="text-justify">   {detailProject[params.id].details} </span>
                         <div className='font-semibold mt-2'>Tools :</div>	 {detailProject[params.id].tools}
-                        <div className='font-semibold mt-2'>Link Github :</div> <a href={detailProject[params.id].github} className='text-blue-400'>{detailProject[params.id].github}</a>
-                        </p>
+                        <div className='font-semibold mt-2'>Link Github :</div> <a href={detailProject[params.id].github_1} className='text-blue-400'>{detailProject[params.id].github_1}</a>
+                        {detailProject[params.id].github_2 && 
+                       
+                        <div className='font-semibold mt-2'>Backend  : <a href={detailProject[params.id].github_2} className='text-blue-400'>{detailProject[params.id].github_2}</a>
+                        </div>
+                        }
+                        </div>
                     </div>
                
                 </div>

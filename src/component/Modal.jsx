@@ -42,7 +42,7 @@ import sistem_produksi from '../assets/sistem-produksi.mp4';
                 <p>
                 <span className='font-semibold'>Details</span> :   {detailProject[idModal].details} <br />
                 <span className='font-semibold'>Tools </span>	: {detailProject[idModal].tools} <br/>
-                <span className='font-semibold'>Link Github</span>	: <a href={detailProject[idModal].github} className='text-blue-400'>{detailProject[idModal].github}</a>
+                <span className='font-semibold'>Link Github</span>	: <a href={detailProject[idModal].github_1} className='text-blue-400'>{detailProject[idModal].github}</a>
                 </p>
                 </div>
                 {/*footer*/}

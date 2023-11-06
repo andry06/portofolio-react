@@ -158,14 +158,15 @@ export const detailProject = [
     title: "POS Food Store",
     details: "A system that can support sales transactions, purchases, product management and transaction reports digitally.",
     tools: "React.JS, Node JS, Express JS MongoDB, CSS Boostrap",
-    github: "https://github.com/andry06/project-eduwork",
+    github_1: "https://github.com/andry06/pos-fe",
+    github_2: "https://github.com/andry06/pos-server",
   },
   {
     id: 0,
     title: "Production Garment System",
     details: " A system that supports the management of garment production data from order data recap, pre-production, bundle record system, monitoring production output and stock of goods in each department from cutting to the finishgood process, and there is a shipment process to generate packinglist of finished goods that are sent.",
     tools: "PHP, Javascript, HTML, CSS Bootstrap, Jquery",
-    github: "private",
+    github_1: "private",
   }
 ];
 
