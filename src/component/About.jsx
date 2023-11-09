@@ -16,7 +16,7 @@ const About = () => {
         <div className="w-full flex flex-col lg:basis-[65%] " data-aos='fade-down' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
             <p className='text-3xl font-bold text-black dark:text-white mt-5'>About Me</p>
             <p className='text-lg text-black dark:text-gray-400 leading-10 text-justify mt-5'>
-                Hello It's Me Andri Suryono. I am a person who is interested in programming. I am a graduate of Informatics Engineering and have experience as an IT staff in garment manufacturing for 5 years. Currently, I just finished a course at Eduwork with the Mern Stack class. In my previous workplace, I used to create or develop programmes with PHP programming language and My Sql database.
+            I'm a graduate of informatics engineering and have experience as an IT staff in garment manufacturing for 5 years. Have an interested in programming and currently have completed a bootcamp course at Eduwork with the Mern Stack class. Have an experienced to create or develop programmes with PHP programming language, My Sql database, dan MERN STACK ( Mongo DB, Express JS, React JS, and Node JS).
             </p>
 
             {/* <div className="mt-5 2xl:mt-10 flex flex-wrap gap-5" data-aos='fade-up' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
