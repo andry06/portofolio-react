@@ -9,6 +9,7 @@ import Tailwind from '../assets/tailwind.png';
 import Restapi from '../assets/restapi.png';
 import Postman from '../assets/postman.png';
 import Git from '../assets/git.png';
+import Laravel from '../assets/laravel.svg';
 
 const Skills = () => {
   return (
@@ -111,6 +112,16 @@ const Skills = () => {
                 <div className="flex flex-col gap-1">
                     <div className='flex items-center justify-between'>
                         <p className='text-md text-semibold text-white'>PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div className='grid-tech-skill easy-in-out' data-aos='zoom-in-down' data-aos-offset='200' data-aos-delay='50' data-aos-duration='500' data-aos-easing='ease-in-out'>
+                <div className='w-10 h-10'>
+                    <img src={Laravel} className='w-full h-full rounded ' />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <div className='flex items-center justify-between'>
+                        <p className='text-md text-semibold text-white'>Laravel</p>
                     </div>
                 </div>
             </div>

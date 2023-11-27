@@ -160,14 +160,34 @@ export const detailProject = [
     tools: "React.JS, Node JS, Express JS MongoDB, CSS Boostrap",
     github_1: "https://github.com/andry06/pos-fe",
     github_2: "https://github.com/andry06/pos-server",
+    demo: "https://pos-sejamcafe.vercel.app/"
   },
   {
-    id: 0,
+    id: 1,
     title: "Production Garment System",
     details: " A system that supports the management of garment production data from order data recap, pre-production, bundle record system, monitoring production output and stock of goods in each department from cutting to the finishgood process, and there is a shipment process to generate packinglist of finished goods that are sent.",
     tools: "PHP, Javascript, HTML, CSS Bootstrap, Jquery",
     github_1: "private",
-  }
+  },
+  {
+    id: 2,
+    title: "FE Homepage Hijja Store",
+    details: "Home Page E-Commerce Hijja Store created based on the UI/UX design that has been provided Eduwork Link Pigma. And Restfull API From link Sistem Toko.",
+    tools: "React JS | Bootstrap | Javascript | HTML | CSS",
+    github_1: "https://github.com/andry06/hijja-store",
+    demo: "https://hijja-store.vercel.app/",
+    figma: "https://www.figma.com/file/ohdcOQsDU5VwA7Dvp3eS1b/Eduwork---Tugas-Desain-website-e-commerce?type=design&node-id=14-2823&mode=design",
+  },
+  {
+    id: 2,
+    title: "Slicing UI Desain Home Page Travlog",
+    details: "Slicing travel blog home page from ui / ux design for Travlog in figma. by making it responsive display for 3 views desktop, tablet, mobile.",
+    tools: "React JS | Tailwind CSS | Javascript | HTML | CSS",
+    github_1: "https://github.com/andry06/slicing-design-travel-web",
+    demo: "https://slicing-travel-web.vercel.app/",
+    figma: "https://www.figma.com/file/yj0HoEt8vIFhBFfyr0j6C2/Responsive-Web-Design-in-Figma-(Community)?type=design&node-id=1156-718&mode=design&t=gMxnK0xuwlpJZ3qP-0",
+
+  },
 ];
 
 export const softskills = [

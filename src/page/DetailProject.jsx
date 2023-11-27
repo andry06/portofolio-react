@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { detailProject } from '../data';
 import Pos from '../assets/pos_project.mp4';
 import sistem_produksi from '../assets/sistem-produksi.mp4';
+import hijja_store from '../assets/hijja-store.png';
+import travlog from '../assets/travlog.png';
 
 const DetailProject = () => {
     const params = useParams();
@@ -22,13 +24,18 @@ const DetailProject = () => {
                 <h4 className='text-3xl font-bold text-black dark:text-white  text-center'>Project</h4>
             
                 <div className="w-full flex flex-col lg:flex-row px-8 md:px-19 gap-10 lg:gap-20 py-14 ">
+ 
                     <div className="w-full lg:mt-3 lg:basis-[50%]">
+                    {params.id <= 1 ?
                     <video className='w-full mx-auto cursor-pointer mb-4' controls >
                     <source 
                     src={params.id == 0 ? Pos :
-                        params.id == 1 ? sistem_produksi : null } 
+                        params.id == 1 ? sistem_produksi : null
+                    } 
                     type="video/mp4" />
-                </video>
+                    </video> : 
+                    <img src={params.id == 2 ? hijja_store : params.id == 3 ? travlog : null } alt="" />
+                         }
                     </div>
                     <div className="w-full flex flex-col lg:basis-[50%] text-black dark:text-white ">
                         <h3 className="text-2xl font-semibold">
@@ -39,8 +46,15 @@ const DetailProject = () => {
                         <div className='font-semibold mt-2'>Tools :</div>	 {detailProject[params.id].tools}
                         <div className='font-semibold mt-2'>Link Github :</div> <a href={detailProject[params.id].github_1} className='text-blue-400'>{detailProject[params.id].github_1}</a>
                         {detailProject[params.id].github_2 && 
-                       
                         <div className='font-semibold mt-2'>Backend  : <a href={detailProject[params.id].github_2} className='text-blue-400'>{detailProject[params.id].github_2}</a>
+                        </div>
+                        }
+                        {detailProject[params.id].demo && 
+                        <div className='font-semibold mt-2'>Link Demo  : <br /> <a href={detailProject[params.id].demo} className='text-blue-400'>{detailProject[params.id].demo}</a>
+                        </div>
+                        }
+                        {detailProject[params.id].figma && 
+                        <div className='font-semibold mt-2'>Link Figma  : <br /> <a href={detailProject[params.id].figma} className='text-blue-400'>Desain Figma</a>
                         </div>
                         }
                         </div>
